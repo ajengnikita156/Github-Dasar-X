@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasir</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<header style="background-color:#A52A2A; padding: 20px; color: #fff;">
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <nav id="sidebar">
+      <div class="sidebar-header">
+          <h1>Kasir Sederhana</h1>
+      </div>
+</header>
+<button class="toggle-sidebar" id="toggle-sidebar">=</button>
+<div class="card-body">
+<body>
+    <center>
+    <div class="jumbotron">
+        <h2>Menu barang</h2>
+        <h4>Silahkan pilih menu dibawah ini</h4><br>
+        <a href="sapu.html"><button type="button" class="btn btn-danger">sapu</button></a>
+        <a href="pel.html"><button class="btn btn-primary col-sm-1">lap pel</button></a>
+        <a href="ember.html"><button class="btn btn-danger col-sm-1">ember</button></a>
+        <a href="gayung.html"><button class="btn btn-info col-sm-1">gayung</button></a>
+    </div>
+    
+</center>
+<center>
+ <p>Harga lap pel : Rp.65000</p>
+ <p>Harga sapu : Rp.45000</p>
+ <p>Harga Ember : Rp.30000</p>
+ <p>Harga Gayung : Rp.15000</p>
+
+</center>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .toggle-sidebar {
+        border: none;
+        background-color: #D2691E;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+      }
+      .sidebar {
+        height: 100vh;
+        width: 200px;
+        list-style: none;
+        background-color: #FF7F50;
+      }
+      .sidebar li a {
+        display: block;
+        padding: 25px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 1px solid silver;
+        transition: background-color 0.5s;
+      }
+      .sidebar li a:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+      .sidebar {
+       height: 100vh;
+       width: 200px;
+       list-style: none;
+       background-color: #FF7F50;
+       /* tambahkan kode ini */
+       position: fixed;
+        left: -200px;
+       transition: 0.5s;
+      }
+       /* tambahkan selector .sidebar-open di css */
+       .sidebar-open {
+       left: 0;
+      }
+
+       .footer{
+       clear: both;
+       background-color:#A52A2A;
+       color:white;
+       padding: 15px;
+       text-align: center;
+      }
+</style>
+
+<script>
+    const toggleSidebar = document.querySelector("#toggle-sidebar");
+const sidebar = document.querySelector(".sidebar");
+
+toggleSidebar.addEventListener("click", () => {
+  sidebar.classList.toggle("sidebar-open");
+});
+</script>
+</body>
+</html

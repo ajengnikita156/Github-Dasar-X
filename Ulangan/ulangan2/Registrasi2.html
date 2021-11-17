@@ -1,0 +1,72 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrasi</title>
+  <link rel="stylesheet" href="registrasi.css">   
+</head> 
+  
+<body>    
+<script type="text/javascript">    
+  function validasi_input(form){    
+ pola_email=/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;    
+ pola_tanggal=/^d{1,2}\/\d{1,2}\/\d{4}$/;    
+
+  if (form.nama.value.length > 50 && form.nama.value.length !=0){    
+  alert("Nama tidak boleh panjang - panjang!");    
+  form.nama.focus();    
+  return (false);    
+  }    
+  else if (form.nama.value == ""){    
+  alert("Dilengkapi dulu namanya!");    
+  form.nama.focus();    
+  return (false);    
+  }
+  
+  else if (!pola_tanggal.test(form.tgllahir.value)){    
+  alert ("Oke Terimakasih ");    
+  form.tgllahir.focus();    
+  return (false);    
+  }    
+  return (true); 
+}    
+</script>    
+   <div class="login">    
+   <form method="post" onsubmit="return validasi_input(this)">    
+   <title>Membuat Form Validasi dengan Javascript </title>   
+     <div>    
+     <label>Nama: <input type="text" name="nama" id="nama" placeholder="tuliskan nama anda" /></label>    
+     </div>    
+     <div>   
+     <label>Alamat:</label>   
+     <td>   
+     <input type="alamat" name="alamat" id="alamat" placeholder="nama jalan,nomor,kota" /></label>    
+     </div>   
+     <div>    
+     <label>Email:</label>    
+     <input type="email" name="email" id="email" placeholder="contoh : contoh@gmail.com" />    
+     </div>    
+     <div>    
+     <label>No.HP:</label>    
+     <input type="text" name="nohp" id="nohp" placeholder="contoh : 08xxxxxxxxxx" />    
+     </div>    
+     <div>    
+     <div>    
+     <label>Jenis Kelamin: </label> <br>
+     <input type="radio" name="gender" value="male" /> Laki-Laki   
+     <br> 
+     <input type="radio" name="gender" value="female" /> Perempuan   
+     </div>    
+     <div>    
+     <label>Tanggal Lahir:</label>    
+     <input type="text" name="tgllahir" id="tgllahir" placeholder="format : dd/mm/yyyy" />    
+     </div>      
+     <div>    
+     <input type="submit" value="Submit" class="tombol">    
+    </div>    
+   </form>    
+ </div>    
+</body>    
+</html>   

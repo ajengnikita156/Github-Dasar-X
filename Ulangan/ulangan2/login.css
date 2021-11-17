@@ -1,0 +1,47 @@
+body{
+    overflow-y: hidden;
+    margin:0;
+    padding: 0;
+    font-family: verdana;
+    background-image: url(abstrak1.jpg);
+  }
+  form{
+    font-family: arial;
+    background-color: rgba(240, 241, 245, 0.986);
+    width: 300px;
+    margin: 180px auto;
+    padding: 30px;
+    text-align: right;
+    color: #2D2D2D;
+    border-radius: 40px 10px;
+    box-shadow: 2px 2px 7px #210fc0;
+  }
+  input{
+    margin: 10px;
+  }
+  input.login{
+    background-color: #0096FF;
+    color: #E7E7E7;
+    font-family: verdana;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 30px 10px auto 0px;
+    text-transform: uppercase;
+    transition: .2s;
+  }
+  input.login:hover{
+    background-color: #93A4B0;
+    color: #CDCDCD;
+  }
+  p{
+    text-align:center;
+    margin: 50px auto;
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: bold;
+    color: #0101A6;
+    font-family: verdana;
+    background-color: #15bef1;
+    border-radius: 20px;
+  }

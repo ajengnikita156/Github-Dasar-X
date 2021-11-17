@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>latihan6</title>
+    <script>
+        alert("Mencari Rata Rata");
+    </script>
+    <body>
+        <p id="text"> Nama</p>
+    </body>
+    <script>
+        var Nama = prompt("Masukan Nama");
+        document.getElementById("text").innerHTML = "Nama: "+ Nama;
+    </script>
+   
+<form name="form">
+    <table width="60%" border="0"><tbody><tr><td width="50%" 
+    valign="top">Menghitung Rata Rata</td><td width="50%"
+    valign="top">NILAI </td></tr><tr><td width="50%"
+    valign="top">Masukan no NIS</td><td width="50%" valign="top"><input type="text" name="angka1" size="3" value="78"/></td></tr><tr><td width="50%"
+    valign="top">UTS</td><td width="50%" valign="top"><input type="text" name="angka1" size="3" value="78"/></td></tr><tr><td width="50%"
+    valign="top">Tugas</td><td width="50%" valign="top"><input type="text" name="angka2" size="3" value="80"/></td></tr><tr><td width="50%"
+    valign="top">UAS</td><td width="50%" valign="top"><input type="text" name="angka3" size="3" value="60"/></td></tr></tbody></table>
+    </form>
+    
+    
+    <button type="button" onclick="cek()" >Rata Rata</button>
+    <h3 id="tampil"></h3> <br>         
+    <script>
+    function cek(){
+    var a=form.angka1.value;
+    var b=form.angka2.value;
+    var c=form.angka3.value;
+    var d=(a-(-b)-(-c))/3;
+    document.getElementById("tampil").innerHTML=d;
+    }
+    </script>    

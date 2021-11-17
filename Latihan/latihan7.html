@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<header style="background-color:black; padding: 20px; color: #fff;">
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <nav id="sidebar">
+      <div class="sidebar-header">
+          <h3>Ajeng Nikita Anggraeni</h3>
+      </div>
+  </header>
+            <button class="toggle-sidebar" id="toggle-sidebar">Side Menu</button>
+              <div class="card-body">
+   
+    <ul class="sidebar">
+      <li><a href="latihan7.html">Beranda</a></li>
+      <li><a href="about.html">Tentang</a></li>
+      <li><a href="kontak.html  ">Kontak</a></li>
+      <li><a href="gallery.html">Galery</a></li> 
+    </ul>
+   
+<p>
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, eaque quasi delectus commodi distinctio quod sequi voluptate odio debitis, natus voluptatum, laudantium placeat ullam dolor tempore. Repudiandae qui id ducimus possimus nam, praesentium voluptates placeat. Perferendis non incidunt reprehenderit accusamus facilis eligendi laboriosam in nam id vitae cupiditate aut explicabo at molestiae dolores reiciendis labore, adipisci deleniti eum placeat cumque quaerat veritatis. Unde quae deleniti recusandae magni aut dignissimos laudantium vel hic odit, nemo facere iure numquam aliquid vitae eos optio architecto nihil. Quidem odio distinctio repudiandae. Adipisci voluptatem et delectus provident animi, inventore, nisi magnam rem consequatur dignissimos sed!
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae eveniet corporis magnam veritatis eos. Repellendus veniam ad voluptatem, eveniet nostrum, vitae illo assumenda perspiciatis quia eos distinctio. Molestiae doloribus autem consequatur quas aperiam cupiditate dolorum! Beatae saepe commodi eius ipsum alias modi ratione temporibus fugiat vero aliquid velit voluptates eos officiis deleniti, eligendi fuga veniam dolorem iusto iure! Sit quidem tempora neque iusto. Consectetur, atque officiis accusantium esse perspiciatis, error fuga tenetur reprehenderit maiores quas rem pariatur vero! Deleniti similique molestiae veniam. Doloribus tempora incidunt recusandae aliquid labore. Vel suscipit quos molestias eius architecto ratione eum omnis minima deserunt ad.
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos aliquid voluptatem autem optio atque dicta dolorem nihil non at fuga sapiente ad enim voluptatibus earum, sit eius inventore voluptas, magnam eum? Quis itaque fuga asperiores quo saepe laudantium necessitatibus deserunt omnis harum nulla dolorem natus eius aperiam voluptas earum assumenda libero incidunt obcaecati porro vel, enim nisi! Voluptates, quae! Nulla possimus iure tempora. Ratione consectetur aliquid neque alias nam minus dolore minima dicta, esse ipsa asperiores ea, accusamus dolorum quaerat sequi doloribus libero. Animi facilis quisquam doloremque cumque explicabo, ipsa rerum provident saepe, tenetur reprehenderit, aliquid itaque voluptatibus temporibus unde.
+</p>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .toggle-sidebar {
+        border: none;
+        background-color: #3097af;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+      }
+      .sidebar {
+        height: 100vh;
+        width: 200px;
+        list-style: none;
+        background-color: #3097af;
+      }
+      .sidebar li a {
+        display: block;
+        padding: 25px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 1px solid silver;
+        transition: background-color 0.5s;
+      }
+      .sidebar li a:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+      .sidebar {
+     height: 100vh;
+     width: 200px;
+     list-style: none;
+     background-color: #3097af;
+     /* tambahkan kode ini */
+     position: fixed;
+    left: -200px;
+    transition: 0.5s;
+     }
+    /* tambahkan selector .sidebar-open di css */
+     .sidebar-open {
+     left: 0;
+    }
+
+    .footer{
+    clear: both;
+    background-color:#7FFFD4;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    }
+</style>
+
+<script>
+    const toggleSidebar = document.querySelector("#toggle-sidebar");
+const sidebar = document.querySelector(".sidebar");
+
+toggleSidebar.addEventListener("click", () => {
+  sidebar.classList.toggle("sidebar-open");
+});
+</script>
+
+<footer>
+    | by Ajeng Nikita A |
+</footer>
+</body>
+</html>

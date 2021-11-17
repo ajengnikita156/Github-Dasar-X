@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        input{
+            width: 700px;
+            height: 40px;
+            border: none;
+        }
+        select{
+            width: 700px;
+            height: 40px;
+            border: none;
+        }
+        button{
+            width: 350px;
+        }
+
+        h1{
+            font-size: 30px;
+            color: black;
+            text-align: center;
+        }
+        body{
+            background-size: 100%;
+        }
+        form{
+            background:white;
+            width: 100%;
+            height: 90px;
+            box-shadow: black 10px 5px 10px 5px;
+        }
+    div{
+            padding-left: 100pxs;
+        }
+    </style>
+</head>
+<body background="img/hotel.jpg">
+
+        <form action="">
+            <h1>* P E R H O T E L A N</h1>
+        </form>
+        <br><br>
+        <center>
+    <input type="text" placeholder="nama" id="nama"><br><br>
+    <select name="" id="pilihan">
+        <option value="deluxe" id="deluxe">deluxe</option>
+        <option value="suite" id="suite">suite rom</option>
+        <option value="precident" id="precident">precident</option>
+    </select><br><br>
+       <select name="pilih" id="pilih">
+           <option value="nomember" id="nomember">nomember</option>
+           <option value="member" id="member">member</option>
+       </select>
+      <br><br>
+    <input type="text" placeholder="durasi menginap" id="durasi"><br><br>
+    <button onclick="submit()" class="btn btn-primary">submit</button>
+    <a href="utama.html"><button class="btn btn-danger ">Logout</button></a>
+</center>
+</body>
+<script>
+    function submit(){
+     var nama = document.getElementById("nama").value;
+     var durasi = document.getElementById("durasi").value;
+     var deluxe = document.getElementById("deluxe").value;
+     var suite = document.getElementById("suite").value;
+     var precident = document.getElementById("precident").value;
+     var pilihan = document.getElementById("pilihan").value;
+     var pilih = document.getElementById("pilih").value;
+     var member = document.getElementById("member").value;
+     var nomember= document.getElementById("nomember").value;
+     var hargad = 275000;
+     var hargas =300000;
+     var hargap = 375000;
+     var hasil;
+     var diskon;
+     var total;
+
+     document.write("nama :" + nama + "<br>");
+   
+     if ( pilihan == "deluxe"){
+         hargad = 275000;
+         hasil  = hargad * durasi;
+         document.write("Harga : " + hargad +"<br>");
+         document.write("durasi menginap :" + durasi+"<br>");
+         document.write("hasilnya " + hasil +"<br>");
+        }
+
+         else if ( pilihan == "suite"){
+         hargas = 300000;
+         hasil  = hargad * durasi;
+         document.write("Harga : " + hargas +"<br>");
+         document.write("durasi menginap :" + durasi+"<br>");
+         document.write("hasilnya " + hasil +"<br>");
+         }
+         else if ( pilihan == "precident"){
+         hargas = 375000;
+         hasil  = hargap * durasi;
+         document.write("Harga : " + hargap +"<br>");
+         document.write("durasi menginap :" + durasi+"<br>");
+         document.write("hasilnya " + hasil +"<br>");
+         }
+
+         if  (pilih ==="member"){
+                if (durasi >= 4 && durasi <= 7){
+                 diskon = (20/100)*hasil;
+                 total = hasil - diskon;
+                 document.write("jika memilih member lebih dari 4 hari diskon 20% : " + total +"<br>");
+            }   else if(durasi >= 7) {
+                  diskon = (35/100)*hasil;
+                  total = hasil - diskon;
+                  document.write("jika  memilih member lebih dari 7 hari diskon35% : " + total +"<br>");
+             }
+         }
+ 
+             else if (pilih  ==="nomember"){
+              if (durasi >= 4 && durasi <= 7){
+                 diskon = (10/100)*hasil;
+                 total = hasil -    diskon;
+                 document.write("jika  memilih no member lebih dari 4 hari diskon 10% : " + total);
+             }else if (durasi >= 7) {
+                  diskon = (15/100)*hasil;
+                  total = hasil - diskon;
+                  document.write("jika  memilih no memberlebih dari 7 hari diskon15% : " + total);
+             }
+         }
+        
+        }
+          
+</script>
+</center>
+</html>

@@ -1,0 +1,42 @@
+body{
+    background-image: url(background2.jpg);
+    font-family:Century Schoolbook;
+ }    
+ h2 {    
+   color: rgb(12, 11, 11);    
+ }    
+ .login {    
+   padding: 1em;    
+   margin: 2em auto;    
+   width: 20em;    
+   background: pink;    
+   border-radius: 3px;    
+ }    
+ label {    
+   font-size: 12pt;    
+   color: rgb(34, 33, 33);   
+ }    
+ input[type="text"],    
+ input[type="email"],    
+ textarea {    
+   padding: 8px;  
+   width: 95%;    
+   background: #efefef;    
+   font-size: 10pt;    
+   margin: 7px 0px;    
+ }    
+  input[type="alamat"],   
+   textarea {    
+   padding: 25px 8px;  
+   width: 95%;    
+   background: #efefef;    
+   font-size: 10pt;    
+   margin: 7px 0px;    
+ }    
+ .tombol {    
+   background: #00008B;    
+   color: white;    
+   border: 0;    
+   padding: 10px 8px;   
+   margin: 7px 0px;    
+ }    

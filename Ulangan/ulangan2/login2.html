@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="login.css">
+  
+</head>
+<body>
+   <form action="ulangan2ke1.html" method="get" id="myForm" onsubmit=" return validasi()">
+   <p>Welcome</p>
+    Username  <input type="text" name="username" placeholder="username">
+    Password  <input type="password" name="password" placeholder="password">
+    <input class="login" type="submit" name="submit" value="login">
+
+    <a href="ulangan2ke1.html">LANJUT</a>
+   </form>
+</body>
+
+<script type="text/javascript">
+   function validasi(){
+    var username = document.forms["myForm"]["username"].value;
+    var password = document.forms["myForm"]["password"].value;
+    if( username == "user" && password == "123"){
+      return true;
+    }
+    else if(username =="" || password ==""){
+      alert("Masukan username dan password Anda");
+      return false;
+    }
+    else {
+      alert("Oke Terimakasih Sudah mengisi:)");
+      return true ;
+    }
+  }
+</script>
+</body>
+</html>

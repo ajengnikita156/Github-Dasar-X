@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("--**---PEMESANAN HOTEL BANDUNG---**--" +"<br>")
+        nama = prompt("Masukan Nama Pelanggan:");
+        document.write("Nama Pelanggan : "+ nama +"<br>"+"<br>");
+        document.write("Pilih Jenis Kamar :" + "<br>");
+        document.write("1.Deluxe Room Rp.275.000/hari <br>");
+        document.write("2.Suite Room Rp.300.000/hari <br>");
+        document.write("3.Precident Room Rp.375.000/hari <br>");
+        deluxe = 275000;
+        suite  = 300000;
+        precident = 375000;
+        var pilih;
+        var jumlah;
+        kamar = prompt("Jenis kamar yang dipesan :");
+        document.write("Jenis kamar Yang dipesan :" + kamar + "<br>" +"<br>");
+        LamaMenginap = prompt("Lama Menginap:" );
+        document.write("Lama menginap:" + LamaMenginap +"<br>"+"<br>" );
+        status =prompt("status pelanggan:");
+        document.write("1. Member <br>");
+        document.write("2.Non Member <br>");
+        document.write("Status Pelanggan :"+ status +" <br>" + "<br>");
+       
+        document.write("--**---NOTA PEMBAYARAN---**--" +"<br>"+ "Nama Pelanggan:"+nama +"<br>" + " Jenis Kamar:" +kamar+ "<br>" + "lama menginap:"+ LamaMenginap+"<br>"+ "Status Pelanggan:" +status +"<br>");
+      
+        if(pilih = deluxe){
+        deluxe = 275000;
+        jumlah = LamaMenginap*deluxe;
+        document.write("Total:" + jumlah);
+        }
+        else if(pilih = suite){
+        suite = 300000; 
+       jumlah = LamaMenginap*suite;    
+       document.write("Total:" + jumlah);
+        }
+        else if(pilih = precident){
+        precident= 375000;
+        jumlah = LamaMenginap* precident;
+        document.write("Total: "+ jumlah);
+        }
+
+        if  (pilih ==="member"){
+                if (LamaMenginap >= 4 && durasi <= 7){
+                 diskon = (20/100)*hasil;
+                 total = hasil - diskon;
+                 document.write("jika memilih member lebih dari 4 hari diskon 20% : " + total +"<br>");
+            }   else if(durasi >= 7) {
+                  diskon = (35/100)*hasil;
+                  total = hasil - diskon;
+                  document.write("jika  memilih member lebih dari 7 hari diskon35% : " + total +"<br>");
+             }
+         }
+ 
+             else if (pilih  ==="nomember"){
+              if (durasi >= 4 && durasi <= 7){
+                 diskon = (10/100)*hasil;
+                 total = hasil -    diskon;
+                 document.write("jika  memilih no member lebih dari 4 hari diskon 10% : " + total);
+             }else if (durasi >= 7) {
+                  diskon = (15/100)*hasil;
+                  total = hasil - diskon;
+                  document.write("jika  memilih no memberlebih dari 7 hari diskon15% : " + total);
+             }
+         }
+        
+    </script>
+</body>
+</html>

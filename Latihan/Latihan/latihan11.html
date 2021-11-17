@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hotel HotelMasBayStar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css ">
+</head>
+<header style="background-color:#A52A2A; padding: 20px; color: #fff;">
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <nav id="sidebar">
+      <div class="sidebar-header">
+          <center><h1>Hotel MasBayStar</h1></center>
+      </div>
+</header>
+<body>
+    <center>
+        <br><br>
+        <label>Nama</label>
+        <input type="text" placeholder="nama" id="nama" style="width: 300px; height: 30px;"><br><br>
+      
+        <label>Durasi</label>
+        <input type="text" placeholder="durasi menginap" id="durasi" style="width: 300px; height: 30px;"><br><br>
+       
+        <label>Tipe  </label>
+        <select name="" id="pilihan" style="width: 300px; height: 30px;">
+            <option value="deluxe" id="deluxe">deluxe</option>
+            <option value="suite" id="suite">suite rom</option>
+            <option value="precident" id="precident">precident</option>
+        </select><br><br>
+        <label>Status</label>
+           <select name="" id="pilih" style="width: 300px; height: 30px;">
+               <option value="nomember" id="nomember">no member</option>
+               <option value="member" id="member">member</option>
+           </select>
+          <br><br>
+
+          <label>Bayar</label>
+          <input type="text" placeholder="bayar" id="bayar"><br><br>
+          <button onclick="submit()"style="width: 350px; height: 30px; background-color: #A52A2A">submit</button>
+</center>
+</body>
+<script>
+    function submit(){
+     var nama = document.getElementById("nama").value;
+     var durasi = document.getElementById("durasi").value;
+     var deluxe = document.getElementById("deluxe").value;
+     var suite = document.getElementById("suite").value;
+     var precident = document.getElementById("precident").value;
+     var pilihan = document.getElementById("pilihan").value;
+     var pilih = document.getElementById("pilih").value;
+     var member = document.getElementById("member").value;
+     var nomember= document.getElementById("nomember").value;
+     var bayar = document.getElementById("bayar").value;
+     var hargad = 275000;
+     var hargas =300000;
+     var hargap = 375000;
+     var hasilk;
+     var totalk;
+     var hasil;
+     var diskon;
+     var total;
+
+
+     document.write("Nama :" + nama + "<br>");
+
+     if ( pilihan == "deluxe"){
+         document.write("Deluxe Room" +"<br>");
+         hargad = 275000;
+         hasil  = hargad * durasi;
+         document.write("Harga : " + hargad +"<br>");
+         document.write("Durasi menginap :" + durasi+"<br>");
+         document.write("Totalnya : " + hasil +"<br>");
+         document.write("Pembayaran :" + bayar +"<br>");
+         totalk = hasil - diskon;        
+         hasilk = bayar - total;
+         document.write("kembalian : " + hasilk +"<br>" );
+        }
+
+         else if ( pilihan == "suite"){ 
+        document.write("Suite Room" +"<br>");
+         hargad = 300000;
+         hasil  = hargad * durasi;
+         document.write("Harga : " + hargad +"<br>");
+         document.write("Durasi menginap :" + durasi+"<br>");
+         document.write("Totalnya : " + hasil +"<br>");
+         document.write("Pembayaran :" + bayar +"<br>");
+         total = hasil - diskon;        
+         hasilk = bayar - total;
+         document.write("kembalian : " + hasilk +"<br>" );
+        }
+
+         else if ( pilihan == "precident"){
+        document.write("Precident Room" +"<br>");
+         hargad = 375000;
+         hasil  = hargad * durasi;
+         document.write("Harga : " + hargad +"<br>");
+         document.write("Durasi menginap :" + durasi+"<br>");
+         document.write("Totalnya : " + hasil +"<br>");
+         document.write("Pembayaran :" + bayar +"<br>");
+         total = hasil - diskon;        
+         hasilk = bayar - total;
+         document.write("kembalian : " + hasilk +"<br>" );
+        }
+
+
+         if (pilih  = "nomember" ){
+             if (durasi >= 4 && durasi <= 7){
+                 diskon = (10/100)*hasil;
+                 total = hasil - diskon;
+                 document.write("Diskon 10% menjadi : " + total);
+             }else if (durasi >= 8) {
+                  diskon = (15/100)*hasil;
+                  total = hasil - diskon;
+                  document.write("Diskon 15% menjadi : " + total);
+             }
+         }
+
+            if (pilih === "member" ){   
+                if (durasi >= 4 && durasi <= 7){
+                 diskon = (20/100)*hasil;
+                 total = hasil - diskon;
+                 document.write("Diskon 20% menjadi : " + total);
+            }   else if(durasi >= 8) {
+                  diskon = ( 35/100)*hasil;
+                  total = hasil - diskon;
+                  document.write(" diskon 35% menjadi : " + total);
+             }
+            }
+         }       
+        
+</script>
+</html>

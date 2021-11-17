@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasir</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<header style="background-color:#A52A2A; padding: 20px; color: #fff;">
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <nav id="sidebar">
+      <div class="sidebar-header">
+          <h1>Kasir Sederhana</h1>
+      </div>
+</header>
+<body>
+    <center>
+    <div class="jumbotron">
+        <h2>Menu barang</h2><br>
+        <a href="sapu.html"><button class="btn btn-warning col-sm-1">sapu</button></a>
+        <a href="pel.html"><button class="btn btn-primary col-sm-1">lap pel</button></a>
+        <a href="ember.html"><button class="btn btn-danger col-sm-1">ember</button></a>
+        <a href="gayung.html"><button class="btn btn-info col-sm-1">gayung</button></a>
+    </div>
+    
+</center>
+<center>
+ <p>Harga Ember : Rp.30000</p>
+<label>Pesan</label>
+<input type="text" placeholder="pesen berapa" id="pesan" class="form-control col-sm-5"><br><br>
+<label>RP.</label>
+<input type="text" placeholder="masukan uang anda" id ="bayar"><br><br>
+<button onclick="submit()" class="btn btn-success col-sm-5" style="width: 300px; height: 30px; background-color: brown;">submit</button>
+</center>
+
+    <script>
+        function submit(){
+            var harga =30000;
+            var jumlah;
+            var pesan = document.getElementById("pesan").value;
+            var bayar = document.getElementById("bayar").value;;
+            var hasil;
+            
+            if(pesan){
+                document.write("harga barang 30000" + "<br>");
+               jumlah = harga * pesan ;
+               document.write("jumlah nya : " + jumlah +"<br>");
+            
+            hasil = bayar - jumlah;
+               document.write("Kembalian : " + hasil);
+            }
+            
+            else {
+                document.write("gada");
+            }
+           
+        }
+    </script>
+
+</body>
+</html

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menentukan umur</title>
+</head>
+<header style="background-color:#A52A2A; padding: 20px; color: #fff;">
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <nav id="sidebar">
+      <div class="sidebar-header">
+          <h1>Menentukan Umur</h1>
+      </div>
+</header>
+<body>
+    <br><br>
+    <center>
+    <label>Nama</label>
+    <input type="text" placeholder="nama" id="Nama" style="width :300px;">
+    <br><br>
+    <label>Umur</label>
+    <input type="text" placeholder="umur" id="umur" style="width :200px;">
+    <br><br>
+    <button onclick="submit()" style="width : 300px; background-color: rgb(255, 123, 0);">submit</button>
+    <br><br>
+    <button><li><a href="halamanutama8.html" style="width:300px;">kembali</a></li></button>
+    </center>
+
+
+    <script type="text/javascript">
+        function submit(){
+         
+        var nama;
+        var umur;
+    
+        var umur = document.getElementById("umur").value;
+
+          if (umur <=5){
+            document.write("wah masih balita yaa");
+          }
+          else if (umur <=12){
+          document.write("kamu mah masih bocah");
+          }
+          else if (umur <=18){
+          document.write("cie yang sudah remaja");
+          }
+          else if (umur <=40){
+          document.write("sudah masuk kategori dewasa");
+          }
+          else if (umur <=60){
+            document.write("orang tua sudah bisa banyak istirahat");
+          }
+          else {
+              document.write("panjang umur perjuangan,Sehat terus dan bahagia selalu ");
+          }
+        }
+    </script>
+</bodygh>
+</html>

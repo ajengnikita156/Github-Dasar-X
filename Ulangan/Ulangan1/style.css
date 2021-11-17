@@ -1,0 +1,23 @@
+ body  {
+    background-color: rgb(163, 182, 197);
+    text-align:center;
+    margin: auto;
+    width: 1300px;
+    height: 500px;
+    position:relative;
+    text-decoration-line:none;
+    }
+ section{
+        width:100%;
+        height:95vh;
+        position: relative;
+    }
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    height:60px;
+    background-color: rgb(55, 16, 230);
+    box-shadow:2px 2px 12px rgb(147, 140, 247);
+    padding:0px 5%;
+   }

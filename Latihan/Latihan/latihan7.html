@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+</head>
+<header style="background-color:#A52A2A; padding: 20px; color: #fff;">
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <nav id="sidebar">
+      <div class="sidebar-header">
+          <h3>WELCOME</h3>
+      </div>
+</header>
+    <button class="toggle-sidebar" id="toggle-sidebar">Side Menu</button>
+    <div class="card-body">
+   
+    <ul class="sidebar">
+      <li><a href="latihan7.html">Beranda</a></li>
+      <li><a href="about.html">Tentang</a></li>
+      <li><a href="kontak.html  ">Kontak</a></li>
+      <li><a href="gallery.html">Galery</a></li> 
+    </ul>
+
+  <center><img src="buah.jpeg"></center>
+  <p>
+  Buah-buahan adalah salah satu sumber serat makanan yang sangat baik bagi tubuh.
+  Manfaat makan buah setiap hari dapat membantu menjaga kesehatan usus, mencegah sembelit,
+  dan masalah pencernaan lainnya. Kebiasaan makan asupan tinggi serat juga dapat mengurangi
+  risiko kanker usus</p>
+ <p>
+  Sumber Vitamin, Berbagai jenis vitamin ada di buah.
+  Sumber Air dan Gizi, buah merupakan salah satu sumber air untuk tubuh
+   dan kebutuhan gizi yang dapat meningkatkan metabolisme tubuh.
+  Sumber antioksidan, buah merupakan salah satu sumber antioksidan alami.</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos velit eaque eligendi, consequatur cumque quis recusandae. Eligendi, fugiat ea rem odit perferendis cupiditate ex neque officiis nostrum adipisci placeat. Explicabo temporibus dicta, nisi exercitationem esse eos cupiditate animi quis aut non, repellendus eius ea ducimus quae officiis error voluptates ipsum perferendis adipisci. Ducimus nostrum voluptatem fuga, sunt quasi maiores repellat quos corporis doloremque deserunt reiciendis voluptate odit nemo expedita tenetur. Modi quae labore fugit unde possimus, culpa eligendi facere minima magnam porro ex quibusdam laboriosam aperiam quos illum excepturi doloribus maxime. Atque vel blanditiis qui ducimus doloribus architecto labore nesciunt, voluptatibus libero porro modi distinctio quam? Quaerat atque voluptatibus error, nobis velit numquam, facilis praesentium porro sequi, autem esse voluptates minima eos suscipit eius aperiam quasi ex sed earum cupiditate explicabo quia labore corrupti mollitia! Voluptatibus quos facilis pariatur ipsum, officia reiciendis at impedit et labore quas quasi molestiae aut nihil consectetur quae iure, obcaecati asperiores ipsa. Quia quidem neque quos illum et, rem autem nobis voluptas aperiam vel enim modi sit dolores deserunt eaque deleniti aliquam architecto molestias eos cupiditate accusamus id! Inventore aperiam voluptates sed dolorem aut ipsum facilis voluptate voluptatibus repellat vitae! Dolor exercitationem earum officiis sequi!</p>
+
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .toggle-sidebar {
+        border: none;
+        background-color: #D2691E;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+      }
+      .sidebar {
+        height: 100vh;
+        width: 200px;
+        list-style: none;
+        background-color: #FF7F50;
+      }
+      .sidebar li a {
+        display: block;
+        padding: 25px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 1px solid silver;
+        transition: background-color 0.5s;
+      }
+      .sidebar li a:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+      .sidebar {
+       height: 100vh;
+       width: 200px;
+       list-style: none;
+       background-color: #FF7F50;
+       /* tambahkan kode ini */
+       position: fixed;
+       left: -200px;
+       transition: 0.5s;
+      }
+       /* tambahkan selector .sidebar-open di css */
+       .sidebar-open {
+       left: 0;
+      }
+
+       .footer{
+       clear: both;
+       background-color:#A52A2A;
+       color:white;
+       padding: 15px;
+       text-align: center;
+      }
+</style>
+
+<script>
+    const toggleSidebar = document.querySelector("#toggle-sidebar");
+const sidebar = document.querySelector(".sidebar");
+
+toggleSidebar.addEventListener("click", () => {
+  sidebar.classList.toggle("sidebar-open");
+});
+</script>
+
+<div class="footer">
+<center> | by Ajeng Nikita A |</center>
+</body>
+</html>

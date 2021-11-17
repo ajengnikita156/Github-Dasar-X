@@ -1,0 +1,178 @@
+body
+{
+    background-color: gainsboro;
+}
+ 
+section{
+    width:100%;
+    height:95vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    height:60px;
+    background-color: rgb(55, 16, 230);
+    box-shadow:2px 2px 12px rgb(147, 140, 247);
+    padding:0px 5%;   
+   }
+.badan-utama
+{
+    width: 1300px;
+    height: 200px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 15px;
+    overflow: hidden;
+}
+
+header
+{
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+ 
+header h2
+{
+    margin-bottom: 7px;
+    font-size: 35px;
+}
+ 
+.navigasi ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+ 
+ul{
+    font-family: sans-serif;
+    text-decoration:none;
+}
+.navigasi li 
+{
+    float: left;
+} 
+.navigasi li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+ 
+.navigasi li a:hover 
+{
+    background-color: cadetblue;
+    transition-duration: 2s;
+}
+ 
+.banner
+{
+    margin-bottom: 10px;
+}
+ 
+.banner img
+{
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+ 
+.kotak
+{
+    border: 1px solid rgb(19, 18, 18);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+ 
+.kotak h3
+{
+    background-color: #7FFFD4;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 13px;
+}
+ 
+.kotak img
+{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+ 
+.kotak p
+{
+    margin-bottom: 10px;
+}
+ 
+.menu-kiri
+{
+    width: 250px;
+    margin-right: 10px;
+    float: left;
+}
+
+.menu-kanan
+{
+    width: 250px;
+    margin-right: 10px;
+    float: right;
+}
+ 
+.tombol
+{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    width: 120px;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+ 
+.tombol:hover
+{
+    background-color: black;
+    transition-duration: 2s;
+}
+ 
+.tombol-pesan
+{
+    background-color: #6495ED;
+}
+ 
+.tombol-lengkap
+{
+    background-color: darkorange;
+}
+ 
+.menu-kanan
+{
+    width: 250px;
+    float: left;
+}
+ 
+.menu-kanan, .menu-kiri, .menu-tengah
+{
+    margin-bottom: 15px;
+}
+ 
+footer
+{
+    clear: both;
+    background-color:#7FFFD4;
+    color: black;
+    padding: 15px;
+    text-align: center;
+}

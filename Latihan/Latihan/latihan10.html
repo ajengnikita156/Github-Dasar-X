@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menentukan Grade</title>
+</head>
+<header style="background-color:#A52A2A; padding: 20px; color: #fff;">
+    <div class="wrapper">
+      <!-- Sidebar -->
+      <nav id="sidebar">
+      <div class="sidebar-header">
+          <h1>Menentukan Grade</h1>
+      </div>
+</header>
+<body>
+
+    <center>
+        <h3>silahkan isi </h3>
+        <br>
+        <label>Nama</label>
+        <input type="text" placeholder=" masukan nama" id="nama">
+        <br><br>
+        <label>Kelas</label>
+        <input type="text" placeholder="kelas" id="kelas">
+        <br><br>
+        <label>Nilai</label>
+        <input type="text" placeholder="nilai" id="nilai">
+        <br><br>
+        <button onclick="submit()" style="width: 300px; height: 30px; background-color: #A52A2A;">submit</button>
+        <br><br>
+        <a href="halamanutama8.html"><button class="btn btn-danger ">Logout</button></a>
+    </center>
+    
+    <script>
+           
+          function submit(){
+             var nama = document.getElementById("nama").value;
+             var kelas = document.getElementById("kelas").value;
+             var nilai = document.getElementById("nilai").value;
+    
+              document.write("Nama :" + nama +"<br>");
+              document.write("kelas :" + kelas +"<br>");
+    
+              if (nilai <= 100 && nilai >= 81){
+                  document.write("nilai : A");
+              }
+              else if(nilai >= 61 && nilai <=81 ){
+                  document.write("nilai  : B");
+              }
+              else if (nilai >= 41 && nilai <=60 ){
+                  document.write("nilai : C");
+              }
+              else if (nilai >= 16 && nilai <=40 ){
+                  document.write("nilai : D");    
+              }
+              else if (nilai >= 0 && nilai <=15 ){
+                  document.write("nilai : E");
+              }
+               else{
+                   document.write("Yang bener woyyy");
+               }
+            } 
+            </script>
+    </script>
+</body>
+</html>

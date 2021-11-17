@@ -1,0 +1,53 @@
+a{
+    text-decoration: none;
+}
+body{
+    background: webkit-linear-gradient(bottom,#3498db,#9b59b6);
+    background-repeat: no-repeat;
+}
+label{
+    font-family:"raleway",sans serif;
+    font-size:11pt;
+}
+#forgot pass{
+    color: 16a055;
+    font-family:"raleway",sans serif;
+    font-size:10pt;
+    margin-top:3px;
+    text-align:right;
+}
+#card{
+    background: #fbfbfb;
+    border-radius: 8px;
+    box-shadow:1px 2px 8px rgba(0,0,0,0,65);
+    height: 410 px;
+    width:320px;
+}
+#card-content{
+    padding: 12px 44px;
+}
+#card-title{
+    font-family:"raleway thin", sans-serif;
+    letter-spacing: 4px;
+    padding-bottom:23px;
+    padding-top:13px;
+    text-align: center;
+}
+#signup{
+    color:goldenrod;
+    font-family:"raleway",sans serif;
+    font-size:10pt;
+    margin-top: 16px;
+    text-align: center;
+}
+#submit-btn{
+    background: webkit-linear-gradient(bottom,#3498db,#9b59b6);
+    border-radius: 21px;
+    border:none;
+    box-shadow:0px 1px 8px #9b59b6);
+    cursor:pointer;
+    color:white;
+    font-family:"raleway semibold",sans serif;
+    height: 42px;
+    
+}

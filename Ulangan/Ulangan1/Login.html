@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Membuat Desain Form Login Dengan CSS - www.malasngoding.com</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+
+	<h1>Silahkan LOGIN Disini</h1>
+
+	<div class="kotak_login">
+		<p class="tulisan_login">WELCOME</p>
+
+		<form id="myForm" onsubmit=" return validasi()">
+			<label>Username</label>
+			<input type="text" name="username" class="form_login" placeholder="Masukan username anda">
+
+			<label>Password</label>
+			<input type="text" name="password" class="form_login" placeholder="Masukan Password Anda">
+
+      <button><li><a href="ulangan1.html">LOG IN</a></li></button>
+            <br>
+            <br>
+			<center>
+				<a class="link" href="ulangan1.html">kembali</a>
+			</center>
+		</form>
+	</div>
+</body>
+<script type="text/javascript">
+    function validasi(){
+     var username = document.forms["myForm"]["username"].value;
+     var password = document.forms["myForm"]["password"].value;
+     if( username == "user" && password == "123"){
+       return true;
+     }
+     else if(username =="" || password ==""){
+       alert("Masukan username dan password Anda");
+       return false;
+     }
+     else {
+       alert("Oke Terimakasih Sudah mengisi:)");
+       return false ;
+     }
+    }
+ </script>
+</html>
